@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="http://cdn.staticfile.org/emoji/0.2.2/emoji.css" rel="stylesheet" type="text/css" />
+	<script src="http://cdn.staticfile.org/jquery/2.1.0/jquery.min.js"></script>
+	<script src="http://cdn.staticfile.org/emoji/0.2.2/emoji.js"></script>
+    <title>emoji</title>
+ </head>
+<body>
+<div><%=emoji%></div>
+<div><%=emoji2%></div>
+<script type="text/javascript">
+	document.write('<%=emoji%><br>');
+	document.write(escape2Html('<%=emoji2%>'));
+	function escape2Html(str) {
+ 		var arrEntities={'lt':'<','gt':'>','nbsp':' ','amp':'&','quot':'"',"#34":"\""};
+ 		return str.replace(/&(lt|gt|nbsp|amp|quot|#34);/ig,function(all,t){return arrEntities[t];});
+	}
+</script>
+</body>
+</html>
