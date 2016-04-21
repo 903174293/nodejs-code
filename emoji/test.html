@@ -8,11 +8,17 @@
     <title>emoji</title>
  </head>
 <body>
-<div><%=emoji%></div>
-<div><%=emoji2%></div>
+<div><%=emoji%></div><br>
+<div><%=emoji2%></div><br>
 <script type="text/javascript">
-	document.write('<%=emoji%><br>');
-	document.write(escape2Html('<%=emoji2%>'));
+	document.write('docomo:  <%=emoji3%><br>');
+	document.write('kddi:    <%=emoji4%><br>');
+	document.write('softbank :   <%=emoji5%><br>');
+	document.write('google:   <%=emoji6%><br>');
+
+	document.write(escape2Html('<%=emoji%><br>'));	
+	document.write(escape2Html('<%=emoji2%><br>'));
+
 	function escape2Html(str) {
  		var arrEntities={'lt':'<','gt':'>','nbsp':' ','amp':'&','quot':'"',"#34":"\""};
  		return str.replace(/&(lt|gt|nbsp|amp|quot|#34);/ig,function(all,t){return arrEntities[t];});
