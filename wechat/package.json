@@ -1,0 +1,28 @@
+{
+  "name": "wechat",
+  "version": "1.0.0",
+  "description": "wechat nodejs ",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binarywang/nodejs-code.git"
+  },
+  "keywords": [
+    "nodejs",
+    "wechat"
+  ],
+  "author": "binary wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binarywang/nodejs-code/issues"
+  },
+  "homepage": "https://github.com/binarywang/nodejs-code#readme"
+}
